@@ -1,0 +1,48 @@
+{
+  "name": "ast/blog-module",
+  "type": "laravel-module",
+  "description": "A blog module for cms.",
+  "keywords": [
+    "blog",
+    "asgardcms",
+    "journal"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miya Yeh",
+      "email": "miyaye3344@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0",
+    "idavoll/core-module": "~3.0",
+    "ast/media-module": "~3.0",
+    "idavoll/tag-module": "~3.0",
+    "doctrine/dbal": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.3",
+    "orchestra/testbench": "3.5.*",
+    "fzaninotto/faker": "~1.5",
+    "friendsofphp/php-cs-fixer": "^2.7"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Blog\\": ".",
+      "Modules\\": "Modules/"
+    }
+  },
+  "extra": {
+     
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+        "psr-4": {
+            "Modules\\Blog\\": ""
+        }
+    }
+}
